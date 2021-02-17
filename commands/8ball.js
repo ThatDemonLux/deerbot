@@ -1,4 +1,3 @@
-const Command = require('../Command.js');
 const { MessageEmbed } = require('discord.js');
 const answers = [
   'It is certain.',
