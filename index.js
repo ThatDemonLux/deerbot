@@ -36,7 +36,7 @@ const cooldowns = new Discord.Collection();
  * After this, bot will start reacting to data from Discord
  */
 client.on('ready', () => {
-  client.user.setActivity('Managing');
+  client.user.setActivity(`${client.guilds.cache.size} server(s)`, { type: 'WATCHING' });
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
