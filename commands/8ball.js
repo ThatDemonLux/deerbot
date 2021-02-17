@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js');
+const Discord = require('discord.js');
 const answers = [
   'It is certain.',
   'It is decidedly so.',
