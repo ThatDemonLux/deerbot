@@ -13,7 +13,8 @@ module.exports = {
     execute(message, args) {
         var rand = ['Heads','Tails'];
         message.reply('Flipping coin...').then((resultMessage) => {
-            return rand[Math.floor(Math.random()*rand.length)];
+
+            resultMessage.edit(rand[Math.floor(Math.random()*rand.length)])
         })
     },
 };
