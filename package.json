@@ -1,0 +1,22 @@
+{
+  "name": "deerbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eric990107/deerbot.git"
+  },
+  "author": "Lux Demon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eric990107/deerbot/issues"
+  },
+  "homepage": "https://github.com/Eric990107/deerbot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.1"
+  }
+}
