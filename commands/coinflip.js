@@ -11,16 +11,9 @@ module.exports = {
     usage: 'coinflip',
     args: false,
     execute(message, args) {
-        const n = Math.floor(Math.random() * 2);
-        let result;
-        if(n === 1) result = 'heads';
-        else result = 'tails';
-        const embed = new MessageEmbed()
-        .setTitle('½  Coinflip  ½')
-        .setDescription(`I flipped a coin for you, ${message.member}. It was **${result}**!`)
-        .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))
-        .setTimestamp()
-        .setColor(message.guild.me.displayHexColor);
-        message.channel.send(embed);
+        var rand = ['Heads','Tails'];
+        message.reply('Flipping coin...').then((resultMessage) => {
+            return rand[Math.floor(Math.random()*rand.length)];
+        })
     },
 };
