@@ -7,6 +7,9 @@ const fs = require('fs');
 // Import/require discord.js module
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const distube = require('distube')
+
+bot.distube = new DisTube(client, { searchSongs: false, emitNewSongOnly: true});
 
 // Dynamically reading commands files
 // Creates list for commands
@@ -14,7 +17,6 @@ client.commands = new Discord.Collection();
 
 // Gets command files from "commands" Folder
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
-
 // Sort files into command list
 for (const file of commandFiles) {
 	const command = require(`./commands/${file}`);
