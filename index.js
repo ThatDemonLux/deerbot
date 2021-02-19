@@ -7,9 +7,6 @@ const fs = require('fs');
 // Import/require discord.js module
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const distube = require('distube')
-
-bot.distube = new DisTube(client, { searchSongs: false, emitNewSongOnly: true});
 
 // Dynamically reading commands files
 // Creates list for commands
